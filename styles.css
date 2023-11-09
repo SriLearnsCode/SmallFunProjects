@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/bright-autumn-leaves-seamless-texture-free-photo.png?w=2210&quality=70) center/cover fixed no-repeat; /* Add your image URL here */
+    animation: fadeIn 1s ease-in-out; /* Fade In Animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  main {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out; /* Slide In Animation */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    color: #333;
+    animation: colorChange 2s infinite alternate; /* Color Change Animation */
+  }
+  
+  @keyframes colorChange {
+    from {
+      color: #333;
+    }
+    to {
+      color: #e74c3c; /* Alizarin */
+    }
+  }
+  
+  label,
+  input,
+  button,
+  p {
+    opacity: 0; /* Start elements with 0 opacity */
+    animation: fadeInText 1s forwards; /* Fade In Text Animation */
+  }
+  
+  @keyframes fadeInText {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
